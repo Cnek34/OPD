@@ -10,7 +10,8 @@ label start:
 
     scene start
     with dissolve
-    show sasha37yo
+    show sasha37yo:
+        xpos 350 ypos -150
     Sasha37yo"Привет! Я Саша и я работаю специалистом информационной безопасности."
     Sasha37yo"Как я докатился до такой жизни? Спокойно, сейчас я все расскажу…"
     Sasha37yo"Эта история началась лет 20 назад. Тогда я был обычным школьником, который совсем не интересовался IT сферой, но очень часто пользовался компьютером."
@@ -22,7 +23,8 @@ label start:
 
     scene door
     with dissolve
-    show bogdan
+    show bogdan:
+        xpos 550 ypos -50
     "Вдруг меня окликнул мужчина, который стоял в дверном проёме."
     Stranger"Мальчик, не поможешь нам?"
 
@@ -33,8 +35,10 @@ label start:
 
     scene door
     with dissolve
-    show bogdan
-    show sasha17yo
+    show bogdan:
+        xpos 550 ypos -50
+    show sasha17yo:
+        xpos 200 ypos 250
     Stranger"Саша стой, нам действительно нужна твоя помощь!"
     "Остановившись, Саша спросил у мужчины."
     Sasha17yo"Откуда вы знаете моё имя?»"
@@ -43,17 +47,22 @@ label start:
 
     scene room
     with dissolve
-    show bogdan
-    show sasha17yo
+    show bogdan:
+        xpos 800 ypos 100
+    show sasha17yo:
+        xpos 100 ypos 300
     "Войдя в помещение, я был удивлён от увиденного. Комната была наполнена большим количеством устройств, компьютеров и шпионской аппаратуры."
     Stranger"Ну, давай знакомиться. Меня зовут Богдан, а это моя команда. И все мы специалисты в сфере кибербезопасность. Наблюдая за тобой, мы
      поняли, что у тебя большие перспективы в данной сфере."
 
     scene table1
     with dissolve
-    show bogdan
-    show sasha17yo
-    show pavel
+    show bogdan:
+        xpos -200 ypos 100
+    show sasha17yo:
+        xpos 200 ypos 300
+    show pavel:
+        xpos 1000 ypos 100
     Bogdan"Итак, это Павел и он кибербезопасный аналитик."
     Pavel"Хай! Тебе как рассказать в двух словах или поподробнее."
     menu:
@@ -68,9 +77,12 @@ label start:
 
     scene table2
     with dissolve
-    show alina
-    show bogdan
-    show sasha17yo
+    show alina:
+        xpos 1000 ypos 100
+    show bogdan:
+        xpos -200 ypos 100
+    show sasha17yo:
+        xpos 200 ypos 300
     Bogdan"Так, идем дальше. Это Алина."
     Alina"О, привет."
     Bogdan"Она лучший этичный хакер."
@@ -78,12 +90,24 @@ label start:
 
     scene table3
     with dissolve
+    show mark:
+        xpos 1100 ypos 250
+    show bogdan:
+        xpos -200 ypos 100
+    show sasha17yo:
+        xpos 200 ypos 300
     Bogdan"И последний наш участник Марк."
     Mark"Приветствую. На меня возлагается обеспечение безопасности информации в ходе ее обработки, передачи, хранения."
     Mark"Я имею прямое отношение обеспечению целостности и постоянства процессов обработки информации, реагированию на инциденты, восстановлению работы сети и компьютерного оборудования."
 
     scene siren
     with dissolve
+    show bogdan:
+        xpos -200 ypos 100
+    show sasha17yo:
+        xpos 200 ypos 300
+    show pavel:
+        xpos 1000 ypos 100
     Bogdan"Ооо, нет. Кто-то пытается взломать наше оборудование."
     Bogdan"Так, всем по местам. А ты Саша иди к Павлу, тоже будешь помогать."
     Sasha17yo"Но я ничего не умею."
@@ -91,6 +115,10 @@ label start:
 
     scene table1
     with dissolve
+    show sasha17yo:
+        xpos 200 ypos 300
+    show pavel:
+        xpos 1000 ypos 100
     Pavel"Сначала надо определить тип кибератаки. Это может быть фишинг, брутфорс-атака, вредоносное ПО и так далее… В нашем же случае это скорее всего брутфорс-атака."
     Sasha17yo"И как это понимать."
     Pavel"Смотри, в этих атаках хакеры используют ПО для подбора комбинации паролей."
@@ -100,21 +128,39 @@ label start:
 
     scene table3
     with dissolve
+    show mark:
+        xpos 1100 ypos 250
+    show sasha17yo:
+        xpos 200 ypos 300
     Mark"САША СМОТРИ! Для того чтобы остановить хакеров нужно сделать ограничитель частоты обращений."
     Mark"С помощью этого метода можно ограничить продолжительность запросов клиента до определенного времени, независимо от того, что именно он делает."
     Mark"В результате время совершения запроса ограничивается как для реального пользователя, так и для скрипта."
 
     scene room
     with dissolve
+    show bogdan:
+        xpos 800 ypos 100
     Bogdan"Ну, вроде все. Теперь брутфорс-атаки нам не помеха."
     Bogdan"Но нужно проверить еще раз работоспособность нашего кода, этим займется Алина."
 
     scene table2
     with dissolve
+    show alina:
+        xpos 1000 ypos 100
     Alina"Я уже пробовала всеми методами взломать нашу защиту, но не выходит. Значит все исправно работает и это больше не повторится."
 
     scene room
     with dissolve
+    show alina:
+        xpos 1200 ypos 100
+    show bogdan:
+        xpos 900 ypos 100
+    show mark:
+        xpos -100 ypos 250
+    show pavel:
+        xpos 0 ypos 100
+    show sasha17yo:
+        xpos 600 ypos 300
     Bogdan"Ребята, все молодцы. Кстати, сколько времени на часах."
     Bogdan"Ого, уже 5 часов утра. Мы тут всю ночь просидели. Саша тебе уже давно пара быть дома."
     Sasha17yo"Да, сейчас пойду. Но мне было так интересно провести с вами время. Я поучаствовал во всех этапах борьбы с хакерами."
@@ -122,11 +168,23 @@ label start:
 
     scene door
     with dissolve
+    show alina:
+        xpos 500 ypos 100
+    show bogdan:
+        xpos 300 ypos 100
+    show mark:
+        xpos -50 ypos 250
+    show pavel:
+        xpos 0 ypos 100
+    show sasha17yo:
+        xpos 1200 ypos 300
     Sasha17yo"Ладно, я пошел. Всем пока!"
     Team"Пока Саша!"
 
     scene start
     with dissolve
+    show sasha37yo:
+        xpos 350 ypos -150
     "На следующий день Саша точно решил связать свою жизнь с информационной безопасностью."
     Sasha37yo"Так я и стал кибербезопасником. Присоединяйся и ты, будущий студент."
 
